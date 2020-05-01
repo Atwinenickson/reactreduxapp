@@ -4,7 +4,7 @@ import { connect } from 'react-redux'
 import { fetchPosts } from '../actions/postsActions'
 import {Post} from '../components/Post'
 
-const PostsPage = (dispatch,loading, posts, hasErrors) => {
+const PostsPage = ({dispatch,loading, posts, hasErrors}) => {
     useEffect(() => {
         dispatch(fetchPosts())
     }, [dispatch])
