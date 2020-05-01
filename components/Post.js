@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export const Post = ({ post }) => (
+export const Post = ({ post, excerpt }) => (
   <article className="post-excerpt">
     <h2>{post.title}</h2>
     <p>{excerpt ? post.body.substring(0, 100) : post.body}</p>

@@ -31,7 +31,7 @@ const SinglePostPage = ({
     }
     return (
         <section>
-            {remderPost()}
+            {renderPost()}
             <h2>Comments</h2>
             {renderComments()}
         </section>
